@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		91F5CC13AE2B1D426309E96D /* Pods_SwiftyJSONConAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5101B94EE4A0E3A988D3D6B1 /* Pods_SwiftyJSONConAlamofire.framework */; };
+		EAF7CAD320A040B400F1F838 /* api.json in Resources */ = {isa = PBXBuildFile; fileRef = EAF7CAD220A040B400F1F838 /* api.json */; };
+		EAF7CAD520A0456D00F1F838 /* CeldaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF7CAD420A0456D00F1F838 /* CeldaTableViewCell.swift */; };
 		EAF88A4220A03C72003E64D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF88A4120A03C72003E64D1 /* AppDelegate.swift */; };
 		EAF88A4420A03C72003E64D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF88A4320A03C72003E64D1 /* ViewController.swift */; };
 		EAF88A4720A03C72003E64D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF88A4520A03C72003E64D1 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 		5101B94EE4A0E3A988D3D6B1 /* Pods_SwiftyJSONConAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyJSONConAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B769233B7637B8F99E64B1B /* Pods-SwiftyJSONConAlamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyJSONConAlamofire.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyJSONConAlamofire/Pods-SwiftyJSONConAlamofire.release.xcconfig"; sourceTree = "<group>"; };
 		C004C436B12ECA257CCBF406 /* Pods-SwiftyJSONConAlamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyJSONConAlamofire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyJSONConAlamofire/Pods-SwiftyJSONConAlamofire.debug.xcconfig"; sourceTree = "<group>"; };
+		EAF7CAD220A040B400F1F838 /* api.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = api.json; sourceTree = SOURCE_ROOT; };
+		EAF7CAD420A0456D00F1F838 /* CeldaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaTableViewCell.swift; sourceTree = "<group>"; };
 		EAF88A3E20A03C72003E64D1 /* SwiftyJSONConAlamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyJSONConAlamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF88A4120A03C72003E64D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAF88A4320A03C72003E64D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,8 +84,10 @@
 			children = (
 				EAF88A4120A03C72003E64D1 /* AppDelegate.swift */,
 				EAF88A4320A03C72003E64D1 /* ViewController.swift */,
+				EAF7CAD420A0456D00F1F838 /* CeldaTableViewCell.swift */,
 				EAF88A4520A03C72003E64D1 /* Main.storyboard */,
 				EAF88A4820A03C73003E64D1 /* Assets.xcassets */,
+				EAF7CAD220A040B400F1F838 /* api.json */,
 				EAF88A4A20A03C73003E64D1 /* LaunchScreen.storyboard */,
 				EAF88A4D20A03C73003E64D1 /* Info.plist */,
 			);
@@ -150,6 +156,7 @@
 			files = (
 				EAF88A4C20A03C73003E64D1 /* LaunchScreen.storyboard in Resources */,
 				EAF88A4920A03C73003E64D1 /* Assets.xcassets in Resources */,
+				EAF7CAD320A040B400F1F838 /* api.json in Resources */,
 				EAF88A4720A03C72003E64D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAF88A4420A03C72003E64D1 /* ViewController.swift in Sources */,
+				EAF7CAD520A0456D00F1F838 /* CeldaTableViewCell.swift in Sources */,
 				EAF88A4220A03C72003E64D1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,7 +359,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WQWRXX9PHB;
 				INFOPLIST_FILE = SwiftyJSONConAlamofire/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aepi.SwiftyJSONConAlamofire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -367,7 +378,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WQWRXX9PHB;
 				INFOPLIST_FILE = SwiftyJSONConAlamofire/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aepi.SwiftyJSONConAlamofire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
